@@ -609,15 +609,7 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
 
 .contact__widget {
   max-width: 560px;
-  margin: 3rem auto 0;
-}
-
-.contact__widget-title {
-  font-family: var(--font-head);
-  font-weight: 600;
-  font-size: 1.15rem;
-  color: var(--navy);
-  margin-bottom: 1.2rem;
+  margin: 0 auto 3rem;
 }
 
 /* ==========================================================================
