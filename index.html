@@ -14,6 +14,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physiotherapy",
+    "name": "Centro Melani Costa",
+    "description": "Fisioterapia deportiva, rehabilitación y entrenamiento personalizado en Palma de Mallorca.",
+    "url": "https://www.centromelanicosta.com",
+    "telephone": "+34971659902",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Camamil·la 6, Local 7-8",
+      "postalCode": "07011",
+      "addressLocality": "Palma",
+      "addressRegion": "Illes Balears",
+      "addressCountry": "ES"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "15:30",
+        "closes": "20:30"
+      }
+    ],
+    "sameAs": ["https://www.instagram.com/centromelanicosta"]
+  }
+  </script>
 </head>
 <body>
 
@@ -213,6 +246,10 @@
         <p class="section__kicker reveal">Contacto</p>
         <h2 class="section__title reveal">Pide tu cita</h2>
         <p class="section__lead reveal">Llámanos o escríbenos por WhatsApp y te asesoramos sin compromiso. Atendemos con cita previa.</p>
+        <p class="contact__hours reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          Lunes a viernes &nbsp;·&nbsp; 9:00 – 14:00 &nbsp;y&nbsp; 15:30 – 20:30
+        </p>
         <div class="contact__grid">
           <a class="contact__item reveal" href="tel:+34971659902">
             <span class="contact__icon" aria-hidden="true">
@@ -235,15 +272,20 @@
             <span class="contact__label">Instagram</span>
             <span class="contact__value">@centromelanicosta</span>
           </a>
-          <!-- TODO: añadir dirección del centro cuando esté confirmada
-          <a class="contact__item reveal" href="https://maps.google.com/?q=...">
+          <a class="contact__item reveal" href="https://www.google.com/maps/search/?api=1&query=Calle%20Camamil%C2%B7la%206%2C%2007011%20Palma%2C%20Espa%C3%B1a" target="_blank" rel="noopener">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
             <span class="contact__label">Dónde estamos</span>
-            <span class="contact__value">Calle ..., Mallorca</span>
+            <span class="contact__value">Calle Camamil·la 6, Local 7-8<br>07011 Palma</span>
           </a>
-          -->
         </div>
         <div class="contact__cta reveal">
           <a href="https://wa.me/34652220988?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20una%20cita" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Escríbenos por WhatsApp</a>
+        </div>
+        <div class="contact__widget reveal">
+          <h3 class="contact__widget-title">O reserva tu cita online</h3>
+          <a id="zl-url" class="zl-url" href="https://www.doctoralia.es/melani-costa-schmid/fisioterapeuta/palma-de-mallorca" rel="nofollow" data-zlw-doctor="melani-costa-schmid" data-zlw-type="big" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="Widget de reserva de citas médicas">Melani Costa Schmid - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
         </div>
       </div>
     </section>
@@ -268,6 +310,7 @@
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#contacto">Contacto</a>
       </nav>
+      <p class="footer__copy">Calle Camamil·la 6, Local 7-8 · 07011 Palma</p>
       <p class="footer__copy">© <span id="year">2026</span> Centro Melani Costa · Fisioterapia, rehabilitación y entrenamiento</p>
     </div>
   </footer>

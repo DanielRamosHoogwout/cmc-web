@@ -493,11 +493,27 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
 
 .contact .section__lead { margin-inline: auto; }
 
+.contact__hours {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: -1.2rem auto 2.6rem;
+  padding: 0.65rem 1.5rem;
+  background: var(--bg-soft);
+  border-radius: 999px;
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--navy);
+}
+
+.contact__hours svg { width: 20px; height: 20px; color: var(--blue); flex-shrink: 0; }
+
 .contact__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.4rem;
-  max-width: 900px;
+  max-width: 1020px;
   margin: 0 auto 2.8rem;
 }
 
@@ -539,6 +555,19 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
   font-weight: 600;
   font-size: 1.08rem;
   color: var(--navy);
+}
+
+.contact__widget {
+  max-width: 560px;
+  margin: 3rem auto 0;
+}
+
+.contact__widget-title {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 1.2rem;
 }
 
 /* ==========================================================================
@@ -608,6 +637,7 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
    ========================================================================== */
 @media (max-width: 960px) {
   .services__grid { grid-template-columns: 1fr 1fr; }
+  .contact__grid { grid-template-columns: 1fr 1fr; max-width: 640px; }
   .intro__grid { grid-template-columns: 1fr; }
   .about__grid { grid-template-columns: 1fr; }
   .about__photo { max-width: 420px; }
