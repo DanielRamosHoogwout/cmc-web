@@ -413,6 +413,56 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
 .card__link:hover { color: var(--blue); }
 
 /* ==========================================================================
+   Técnicas y aparatología
+   ========================================================================== */
+.techniques__grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2rem, 6vw, 4.5rem);
+  align-items: center;
+}
+
+.techniques__photo {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.techniques__lead {
+  color: var(--text-soft);
+  margin-bottom: 1.8rem;
+}
+
+.techniques__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.techniques__list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.75rem 1.1rem;
+  background: var(--bg-soft);
+  border-radius: 12px;
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--navy);
+}
+
+.techniques__list li::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
    Cita / frase
    ========================================================================== */
 .quote {
@@ -639,6 +689,8 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
   .services__grid { grid-template-columns: 1fr 1fr; }
   .contact__grid { grid-template-columns: 1fr 1fr; max-width: 640px; }
   .intro__grid { grid-template-columns: 1fr; }
+  .techniques__grid { grid-template-columns: 1fr; }
+  .techniques__photo { max-width: 480px; }
   .about__grid { grid-template-columns: 1fr; }
   .about__photo { max-width: 420px; }
 }
@@ -666,6 +718,7 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
   .nav__link { font-size: 1.05rem; }
 
   .services__grid { grid-template-columns: 1fr; }
+  .techniques__list { grid-template-columns: 1fr; }
   .center__gallery { grid-template-columns: 1fr; }
   .center__item { aspect-ratio: 4 / 3; }
   .contact__grid { grid-template-columns: 1fr; max-width: 420px; }
