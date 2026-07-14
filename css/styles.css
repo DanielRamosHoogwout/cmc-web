@@ -494,10 +494,16 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
 }
 
 .center__item {
+  position: relative;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
   aspect-ratio: 3 / 4;
+}
+
+.center__item--wide {
+  grid-column: span 2;
+  aspect-ratio: auto;
 }
 
 .center__item img {
@@ -507,6 +513,17 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
 }
 
 .center__item:hover img { transform: scale(1.04); }
+
+.center__item figcaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 2.2rem 1.2rem 0.9rem;
+  background: linear-gradient(to top, rgba(14, 33, 68, 0.75), transparent);
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--white);
+}
 
 /* ==========================================================================
    Sobre mí
@@ -713,5 +730,6 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
   .techniques__list { grid-template-columns: 1fr; }
   .center__gallery { grid-template-columns: 1fr; }
   .center__item { aspect-ratio: 4 / 3; }
+  .center__item--wide { grid-column: auto; }
   .contact__grid { grid-template-columns: 1fr; max-width: 420px; }
 }
