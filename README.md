@@ -6,12 +6,27 @@ Sitio estático sin build: HTML + CSS + JS vanilla, pensado para servirse desde 
 ## Estructura
 
 ```
-index.html        Página principal (una sola página con secciones)
-css/styles.css    Estilos
+index.html        Página principal en español (una sola página con secciones)
+en/index.html     Versión en inglés
+de/index.html     Versión en alemán
+css/styles.css    Estilos (compartidos por los tres idiomas)
 js/main.js        Menú móvil, sombra del header, animaciones de scroll, año del footer
 assets/img/       Imágenes optimizadas para la web (las que usa la página)
 assets/brand/     Material original: logo PNG/EPS, fotos sin comprimir, banners, infografías
 ```
+
+### Idiomas
+
+- Español en la raíz (`/`), inglés en `/en/` y alemán en `/de/`, con selector
+  ES · EN · DE en el menú y etiquetas `hreflang` en el `<head>` de las tres
+  páginas para que Google muestre a cada usuario su idioma.
+- **Al cambiar contenido de `index.html`, replicar el cambio en `en/index.html`
+  y `de/index.html`** (mismo HTML, textos traducidos). El CSS y el JS son
+  compartidos, esos solo se tocan una vez.
+- Las páginas de idiomas usan rutas relativas (`../assets/...`), así que en
+  local con `file://` el selector de idioma puede abrir el listado de la
+  carpeta en vez del `index.html`; servido (GitHub Pages o `python -m
+  http.server`) funciona bien.
 
 ### Secciones de `index.html`
 
